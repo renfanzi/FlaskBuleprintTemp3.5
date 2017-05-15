@@ -98,7 +98,7 @@ class MyPymysql(base_pymysql):
     """
     def __init__(self, conf_name):
         self.conf = Config().get_content(conf_name)
-        super(My_Pymysql, self).__init__(**self.conf)
+        super(MyPymysql, self).__init__(**self.conf)
         self.connect()
 
     def idu_sql(self, sql):
